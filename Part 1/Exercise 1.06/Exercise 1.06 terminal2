@@ -1,0 +1,18 @@
+Microsoft Windows [Version 10.0.19045.4412]
+(c) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+C:\Windows\System32>docker container ls -a
+CONTAINER ID   IMAGE                          COMMAND           CREATED         STATUS         PORTS     NAMES
+fc12674a6728   devopsdockeruh/pull_exercise   "node index.js"   4 minutes ago   Up 4 minutes             zealous_solomon
+
+C:\Windows\System32>docker exec fc12 ls -la
+total 24
+drwxr-xr-x    1 root     root          4096 Mar 11  2019 .
+drwxr-xr-x    1 root     root          4096 Mar 11  2019 ..
+drwxr-xr-x    8 root     root          4096 Mar 11  2019 .git
+-rw-r--r--    1 root     root            70 Mar 11  2019 Dockerfile
+-rw-r--r--    1 root     root            66 Mar 11  2019 README.md
+-rw-r--r--    1 root     root          1441 Mar 11  2019 index.js
+
+C:\Windows\System32>docker exec fc12 tail -f ./README.md
+This is the readme, use input "basics" to complete this exercise.
