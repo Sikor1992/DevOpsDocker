@@ -1,0 +1,40 @@
+Microsoft Windows [Version 10.0.19045.4412]
+(c) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+C:\Windows\System32>docker build . -t web-server
+[+] Building 2.6s (6/6) FINISHED                                                                         docker:default
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 111B                                                                               0.0s
+ => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                                1.7s
+ => [auth] devopsdockeruh/simple-web-service:pull token for registry-1.docker.io                                   0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine@sha256:dd4d367476f86b7d7579d3379fe446ae5dfce254  0.9s
+ => => resolve docker.io/devopsdockeruh/simple-web-service:alpine@sha256:dd4d367476f86b7d7579d3379fe446ae5dfce254  0.0s
+ => => sha256:fd312adc88e08116713c2c47a0581b19987c35781ded55e1601a6e592b93cff8 1.23kB / 1.23kB                     0.0s
+ => => sha256:ba3557a56b150f9b813f9d02274d62914fd8fce120dd374d9ee17b87cf1d277d 2.81MB / 2.81MB                     0.3s
+ => => sha256:1dace236434be86459654483db0e58c6721327103a1710bc2e8b25baf33a9559 5.12MB / 5.12MB                     0.8s
+ => => sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B                           0.6s
+ => => sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543 945B / 945B                         0.0s
+ => => extracting sha256:ba3557a56b150f9b813f9d02274d62914fd8fce120dd374d9ee17b87cf1d277d                          0.0s
+ => => extracting sha256:1dace236434be86459654483db0e58c6721327103a1710bc2e8b25baf33a9559                          0.0s
+ => => extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1                          0.0s
+ => exporting to image                                                                                             0.0s
+ => => exporting layers                                                                                            0.0s
+ => => writing image sha256:b270552b2b2ffb0226236922340399bbe75cf3e056bbe7003a8c0ee8c16f4391                       0.0s
+ => => naming to docker.io/library/web-server                                                                      0.0s
+
+View build details: docker-desktop://dashboard/build/default/default/k2gv1khhnz44mjbcvsqfwpbpn
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+C:\Windows\System32>docker run web-server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
