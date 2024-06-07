@@ -1,0 +1,35 @@
+C:\Users\Maciek\docker>docker run -v "%cd%\text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+Unable to find image 'devopsdockeruh/simple-web-service:latest' locally
+latest: Pulling from devopsdockeruh/simple-web-service
+cd2b813b068d: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:20282b20abae04beefa9637bb565943330ed5d085a22fcf8c4878abad80be712
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:latest
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+
+Contents of text.log in my filesystem (C:\Users\Maciek\docker):
+2024-06-05 13:11:10 +0000 UTC
+2024-06-05 13:11:12 +0000 UTC
+2024-06-05 13:11:14 +0000 UTC
+2024-06-05 13:11:16 +0000 UTC
+2024-06-05 13:11:18 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 13:11:20 +0000 UTC
+2024-06-05 13:11:22 +0000 UTC
+2024-06-05 13:11:24 +0000 UTC
+2024-06-05 13:11:26 +0000 UTC
+2024-06-05 13:11:28 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 13:11:30 +0000 UTC
+2024-06-05 13:11:32 +0000 UTC
+2024-06-05 13:11:34 +0000 UTC
