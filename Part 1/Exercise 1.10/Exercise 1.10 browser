@@ -1,0 +1,5 @@
+http://localhost:3456/
+
+Contents:
+message	"You connected to the following path: /"
+path	"/"
