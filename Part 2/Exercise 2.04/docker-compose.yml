@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis
+    command: redis-server
+    container_name: redis
+  frontend:
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
+    build: .\frontend\.
+    container_name: frontend
+    ports:
+      - 5000:5000
+  backend:
+    environment:
+      - REQUEST_ORIGIN=http://localhost:5000
+      - REDIS_HOST=redis
+    build: .\backend\.
+    container_name: backend
+    ports:
+      - 8080:8080
