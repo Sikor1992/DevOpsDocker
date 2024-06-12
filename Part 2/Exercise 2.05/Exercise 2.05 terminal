@@ -1,0 +1,37 @@
+C:\Users\Maciek\docker\scaling>docker compose up -d --scale compute=3
+time="2024-06-12T14:25:31+02:00" level=warning msg="C:\\Users\\Maciek\\docker\\scaling\\docker-compose.yml: `version` is obsolete"
+[+] Running 13/13
+ ! load-balancer Warning    pull access denied for load-balancer, repository does not ex...                        1.9s
+ ✔ calculator Pulled                                                                                               4.9s
+   ✔ 8215d3b1f05c Pull complete                                                                                    2.9s
+   ✔ 3bdef4317ef4 Pull complete                                                                                    2.9s
+ ✔ compute Pulled                                                                                                  4.7s
+   ✔ 59bf1c3509f3 Pull complete                                                                                    0.9s
+   ✔ b616ac4a64bf Pull complete                                                                                    2.3s
+   ✔ 3b9e1e8ab9ce Pull complete                                                                                    2.3s
+   ✔ 3507ddbf3909 Pull complete                                                                                    2.3s
+   ✔ 84bd96422fd6 Pull complete                                                                                    2.3s
+   ✔ d70e2f77d9a7 Pull complete                                                                                    2.3s
+   ✔ 01eb6b846ef2 Pull complete                                                                                    2.7s
+   ✔ f8d70de855ef Pull complete                                                                                    2.7s
+2024/06/12 14:25:36 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+2024/06/12 14:25:36 http2: server: error reading preface from client //./pipe/docker_engine: file has already been closed
+[+] Building 1.0s (6/6) FINISHED                                                                         docker:default
+ => [load-balancer internal] load build definition from Dockerfile                                                 0.0s
+ => => transferring dockerfile: 73B                                                                                0.0s
+ => [load-balancer internal] load metadata for docker.io/jwilder/nginx-proxy:latest                                0.9s
+ => [load-balancer auth] jwilder/nginx-proxy:pull token for registry-1.docker.io                                   0.0s
+ => [load-balancer internal] load .dockerignore                                                                    0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => CACHED [load-balancer 1/1] FROM docker.io/jwilder/nginx-proxy:latest@sha256:3b0626854367c6f73c9f01f4137427873  0.0s
+ => [load-balancer] exporting to image                                                                             0.0s
+ => => exporting layers                                                                                            0.0s
+ => => writing image sha256:104bf758630b96d20d1c4c6144d67be9dd6a5503e595aa5639a04eba7790a872                       0.0s
+ => => naming to docker.io/library/load-balancer                                                                   0.0s
+[+] Running 6/6
+ ✔ Network scaling_default      Created                                                                            0.0s
+ ✔ Container calculator         Started                                                                            0.6s
+ ✔ Container load-balancer      Started                                                                            0.5s
+ ✔ Container scaling-compute-1  Started                                                                            0.5s
+ ✔ Container scaling-compute-3  Started                                                                            0.8s
+ ✔ Container scaling-compute-2  Started                                                                            1.0s
