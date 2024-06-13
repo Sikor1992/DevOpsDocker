@@ -1,0 +1,2 @@
+When it comes to frontend's and backend's docerfiles, I had to change their env's accordingly (backend to pure localhost and frontend to localhost/api).
+Speaking of docker-compose, I had to add networks to redis, because I had forgotten about that.
